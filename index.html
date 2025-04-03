@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Midnights Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-sale=1.0, width=device-width">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Just+Another+Hand&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    body {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #nav {
+      background-color: transparent;
+      width: 100%;
+      height: 2.75em;
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 999;
+      font-family: "Just Another Hand", cursive;
+    }
+
+    ul {
+      text-align: right;
+      margin: 0.75em 0em;
+    }
+
+    li {
+      list-style: none;
+      display: inline;
+      padding: .75em;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #EED2FF;
+    }
+
+    h1 {
+      color: white;
+      font-size: 2em;
+      position: absolute;
+      top: 1em;
+      left: 3%;
+    }
+
+    h3 {
+      color: white;
+      font-size: 1em;
+      font-weight: 500;
+      position: absolute;
+      top: 4.5em;
+      left: 3%;
+    }
+    
+    #date {
+      top: 5.75em;
+    }
+
+    #logo {
+      position: absolute;
+      top: 0;
+      margin: 0.75em 0em;
+      color: #DA9AFF;
+      padding-left: 0.75em;
+    }
+
+    #landing {
+      width: 100%;
+      position: relative;
+      background-image: url("mid-01.jpg");
+      background-color: black;
+      aspect-ratio: 3/2;
+      background-size: cover;
+    }
+
+    #description {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      color: black;
+      font-size: 0.75em;
+      display: inline;
+    }
+
+    #description p {
+      padding: 3% 5%;
+      padding-bottom: 0;
+    }
+    
+    #description a {
+      padding: 3% 5%;
+      padding-bottom: 0;
+      color: black;
+    }
+    
+    #description a:hover {
+      color: #DA9AFF;
+    }
+
+    #images {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 3%;
+    }
+
+    #column {
+      flex: 25%;
+      max-width: 23%;
+      padding: 1%;
+    }
+
+    #column img {
+      margin-top: 7%;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive Design Additions */
+    @media screen and (max-width: 600px) {
+      body {
+        width: 100%;
+      }
+      
+      h1 {
+      font-size: 1.5em;
+      position: absolute;
+      top: 1.5em;
+      left: 3%;
+    }
+
+    h3 {
+      font-size: 0.75em;
+      position: absolute;
+      top: 7.5em;
+      left: 3%;
+    }
+      
+      #date {
+        top: 8.75em;
+      }
+      
+      #column {
+        flex: 100%;
+        max-width: 95%;
+        padding: 3%;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      body {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <div id="nav">
+      <p id="logo">Paige's Photoshoots</p>
+      <ul>
+        <li><a href="https://paige-gug.github.io/Photoshoots/">Home</a></li>
+        <li><a href="https://paige-gug.github.io/OTM/">Galleries</a></li>
+        <li><a href="/">About</a></li>
+      </ul>
+    </div>
+
+    <div id="landing">
+      <h1>Midnights</h1>
+      <h3>Taylor Swift Inspired</h3>
+      <h3 id="date">August 24, 2024</h3>
+    </div>
+
+    <div id="description">
+      <p>Founded in 2016, One Team Movement is a not-for-profit organization that supports the growth and development of synchronized skating worldwide, toward Olympic inclusion. These photos feature their annual Ontario synchro camp that brings together skaters of all ages for a weekend of workshops, lessons, and bonding over their love for the sport.</p>
+    </div>
+
+    <div id="images">
+      <div id="column">
+        <img src="otm1.jpg" alt="one girl leans against another while figure skating">
+        <img src="otm2.jpg" alt="a line of figure skaters holding shoulders">
+        <img src="otm9.jpg" alt="a line of figure skaters holding shoulders with guards on their heads">
+      </div>
+      <div id="column">
+        <img src="otm4.jpg" alt="a group of figure skaters reaching for a balloon">
+        <img src="otm5.jpg" alt="two figure skaters holding hands">
+        <img src="otm6.jpg" alt="a line of detached figure skaters all turning around">
+      </div>
+      <div id="column">
+        <img src="otm7.jpg" alt="a group photo of about 50 figure skaters on the ice">
+        <img src="otm8.jpg" alt="two figure skaters high five">
+        <img src="otm3.jpg" alt="one girl on skates picking up another figure skater">
+      </div>
+      <div id="column">
+        <img src="otm10.jpg" alt="a small girl figure skater learns from an older girl">
+        <img src="otm11.jpg" alt="a girl figure skater posed and looking left">
+        <img src="otm12.jpg" alt="a group of figure skaters take a selfie">
+      </div>
+    </div>
+    <div id="description"><a href="#">Next Gallery ></a></div>
+  </body>
+</html>
